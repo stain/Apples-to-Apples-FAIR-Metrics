@@ -1,0 +1,36 @@
+@prefix fdof-o: <http://example.com/fdof-o/>
+@prefix s: <http://schema.org/>
+@prefix mime: <https://www.iana.org/assignments/media-types/>
+@prefix ex: <http://exampel.com/exampleSomething>
+
+<https://w3id.org/a2a-fair-metrics/46-http-fdo-skin/>
+    a fdof-o:FAIRGroundEntity, fdof-o:FAIRMaterializationObject ;
+    fdof-o:hasMetadata <https://s11.no/2022/a2a-fair-metrics/46-http-fdo-skin/fdo.ttl> .
+
+<https://s11.no/2022/a2a-fair-metrics/46-http-fdo-skin/fdo.ttl> 
+    a fdof-o:MetadataRecord, fdof-o:FAIRInformationObject;
+    fdof-o:isMetadataOf <https://w3id.org/a2a-fair-metrics/46-http-fdo-skin/> ;
+    fdof-o:hasInformationObjectType fdof-o:FDOMetadata .
+
+<https://s11.no/2022/a2a-fair-metrics/46-http-fdo-skin/metadata.ttl> 
+   a fdof-o:FAIRMaterialisationObject ;
+   fdof-o:hasEncodingFormat mime:text/turtle .
+
+<https://w3id.org/a2a-fair-metrics/46-http-fdo-skin/???>
+    a fdof-o:GroundObject, fdof-o:FAIRInformationObject;    
+    fdof-o:hasMetadata <https://s11.no/2022/a2a-fair-metrics/46-http-fdo-skin/> ;    
+    fdof-o:materializedBy <https://s11.no/2022/a2a-fair-metrics/46-http-fdo-skin/skin-lesion.csv>, 
+        <https://s11.no/2022/a2a-fair-metrics/46-http-fdo-skin/skin-lesion.png> ;
+    ex:hasSemanticDataModel <http://example.com/skinLesionSemanticModel> .
+
+<https://s11.no/2022/a2a-fair-metrics/46-http-fdo-skin/skin-lesion.csv>
+    a fdof-o:FAIRMaterializationObject;
+    fdof-o:hasEncodingFormat mime:text/csv;
+    s:contentSize 45 .
+
+<https://s11.no/2022/a2a-fair-metrics/46-http-fdo-skin/skin-lesion.png>
+    a fdof-o:FAIRMaterializationObject;
+    fdof-o:hasEncodingFormat mime:image/png;
+    s:contentSize 10466 .
+
+

@@ -1,0 +1,20 @@
+<Files index.html>
+  Header add Link <https://w3id.org/a2a-fair-metrics/45-http-fdo/>;rel="cite-as"
+  Header add Link <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/fdo.ttl>;rel="alternate";type="text/turtle;profile=\"http://example.com/fdo\""
+  Header add Link <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/metadata.ttl>;rel="describedby";type="text/turtle"
+  Header add Link <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/skin-lesion.csv>;rel="item";type="text/csv"
+  Header add Link <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/skin-lesion.png>;rel="item";type="image/png"
+</Files>
+
+<Files skin-lesion.csv>  
+  Header add Link <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/>;rel="collection"
+</Files>
+
+<Files skin-lesion.png>  
+  Header add Link <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/>;rel="collection"
+</Files>
+
+<Files fdo.ttl>  
+  Header add Link <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/>;rel="alternate"
+</Files>
+

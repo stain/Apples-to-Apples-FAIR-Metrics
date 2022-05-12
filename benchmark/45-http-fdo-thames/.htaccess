@@ -1,0 +1,15 @@
+<Files index.html>
+  Header add Link <https://w3id.org/a2a-fair-metrics/45-http-fdo/>;rel="cite-as"
+  Header add Link <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/fdo.ttl>;rel="alternate";type="text/turtle;profile=\"http://example.com/fdo\""
+  Header add Link <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/metadata.ttl>;rel="describedby";type="text/turtle"
+  Header add Link <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/test-apple-data.csv>;rel="item";type="text/csv"
+</Files>
+
+<Files test-apple-data.csv>  
+  Header add Link <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/>;rel="collection"
+</Files>
+
+<Files fdo.ttl>  
+  Header add Link <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/>;rel="alternate"
+</Files>
+

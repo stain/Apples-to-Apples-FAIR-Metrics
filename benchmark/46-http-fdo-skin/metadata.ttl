@@ -1,0 +1,19 @@
+@prefix s: <http://schema.org/>
+
+<https://s11.no/2022/a2a-fair-metrics/46-http-fdo-skin/> s:license <https://spdx.org/licenses/CC0-1.0> ;
+  s:subjectOf <https://doi.org/10.3233/SHTI210179> .
+
+<https://doi.org/10.3233/SHTI210179> a s:ScholarlyArticle ;
+    s:name "Distributed Skin Lesion Analysis Across Decentralised Data Sources";
+    s:author     
+        [ a s:Person, s:name "Yongli Mou"], 
+        [ a s:Person, s:name "Sascha Welten"], 
+        [ a s:Person, s:name "Mehrshad Jaberansary"], 
+        [ a s:Person, s:name "Yeliz Ucer Yediel"], 
+        [ a s:Person, s:name "Toralf Kirsten", "Stefan Decker", "Oya Beyan"]
+.
+
+
+## Something about samples and study
+# https://bioschemas.org/types/BioSample/0.1-RELEASE-2019_06_19
+# https://jermontology.org/ or similar

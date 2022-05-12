@@ -1,0 +1,33 @@
+@prefix fdof-o: <http://exampel.com/fdof-o/>
+@prefix s: <http://schema.org/>
+@prefix mime: <https://www.iana.org/assignments/media-types/>
+@prefix ex: <http://exampel.com/exampleSomething>
+
+<https://w3id.org/a2a-fair-metrics/45-http-fdo/>
+    a fdof-o:FAIRGroundEntity, fdof-o:FAIRMaterializationObject ;
+    fdof-o:describedBy <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/> .
+
+<https://s11.no/2022/a2a-fair-metrics/45-http-fdo/> 
+    a fdof-o:MetadataRecord, fdof-o:FAIRInformationObject;
+    fdof-o:isMetadataOf <https://w3id.org/a2a-fair-metrics/45-http-fdo/> ;
+    fdof-o:hasInformationObjectType fdof-o:FDOMetadata ;
+    fdof-o:materialisedBy <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/metadata.ttl> .
+
+<https://s11.no/2022/a2a-fair-metrics/45-http-fdo/metadata.ttl> 
+   a fdof-o:FAIRMaterialisationObject ;
+   fdof-o:hasEncodingFormat mime:text/turtle .
+
+<https://w3id.org/a2a-fair-metrics/45-http-fdo/45-http-fdo/#somethingelseorwhat>
+    a fdof-o:GroundObject, fdof-o:FAIRInformationObject;    
+    fdof-o:hasMetadata <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/> ;    
+    fdof-o:hasInformationObjectType <http://schema.org/Dataset>; 
+    fdof-o:materializedBy <https://s11.no/2022/a2a-fair-metrics/45-http-fdo/river-thames.csv> ;
+    ex:hasSemanticDataModel <https://w3id.org/ro/crate> .
+
+<https://s11.no/2022/a2a-fair-metrics/45-http-fdo/river-thames.csv>
+    a fdof-o:FAIRMaterializationObject;
+    fdof-o:hasEncodingFormat mime:text/csv;
+    s:contentSize 455421 .
+
+
+
